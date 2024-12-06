@@ -1,0 +1,178 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+p, ul, li {
+    margin-bottom: 10px;
+}
+
+#about, #portfolio, #experience, #education, #skills, #contact {
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.project p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.experience-item, .education-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p, footer ul {
+    margin-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Additional styling for specific sections */
+#courses, #languages {
+    margin-bottom: 20px;
+}
+
+#courses ul, #languages ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-item h3, .education-item h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .portfolio-gallery {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
